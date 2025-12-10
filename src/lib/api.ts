@@ -150,6 +150,7 @@ function delay(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-export const serverUrl: string = "http://localhost:3000";
+// export const serverUrl: string = "http://localhost:3000";
 // export const serverUrl: string = "http://192.168.23.176:3000";
+export const serverUrl: string = "https://hkai-server.onrender.com";
 
