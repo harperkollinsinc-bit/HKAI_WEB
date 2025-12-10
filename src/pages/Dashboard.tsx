@@ -19,9 +19,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     loadWorkpaces();
-    if (!user) {
-      navigate("/login");
-    }
+    
   }, []);
 
   const loadWorkpaces = async () => {
@@ -119,6 +117,8 @@ const Dashboard = () => {
       close();
     }
   };
+
+  if (!user) return;
 
   if (loading) {
     return (
